@@ -1,0 +1,47 @@
+/* ===== NAVBAR ===== */
+.header {
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    padding: 15px 0;
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #4c8bf5;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+}
+
+.login-btn {
+    padding: 6px 14px;
+    border: 1px solid #4c8bf5;
+    border-radius: 6px;
+}
+
+.register-btn {
+    padding: 8px 16px;
+    background: #4c8bf5;
+    border-radius: 6px;
+    color: white !important;
+}
