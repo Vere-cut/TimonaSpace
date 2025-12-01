@@ -5,6 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mood</title>
 </head>
+<link rel="stylesheet" href="./css/style.css">
 <body>
+    <section class="mood-container">
+
+    <h2>Track Your Mood</h2>
+    <p class="mood-subtitle">How are you feeling today?</p>
+
+    <!-- Mood Icons -->
+    <div class="mood-options">
+        <div class="mood-option" data-mood="Happy">😊</div>
+        <div class="mood-option" data-mood="Sad">😢</div>
+        <div class="mood-option" data-mood="Calm">😌</div>
+        <div class="mood-option" data-mood="Angry">😠</div>
+        <div class="mood-option" data-mood="Stressed">😫</div>
+        <div class="mood-option" data-mood="Excited">🤩</div>
+    </div>
+
+    <!-- Optional Note -->
+    <textarea class="mood-note" placeholder="Add a short note (optional)..."></textarea>
+
+    <!-- Save Button -->
+    <button class="save-mood-btn">Save Mood</button>
+
+    <!-- Mood History -->
+    <h3 class="history-title">Mood History</h3>
+
+    <div class="mood-history">
+        <div class="history-item">
+            <span class="history-icon">😊</span>
+            <span class="history-label">Happy</span>
+            <span class="history-date">Nov 30, 2025</span>
+        </div>
+
+        <div class="history-item">
+            <span class="history-icon">😢</span>
+            <span class="history-label">Sad</span>
+            <span class="history-date">Nov 29, 2025</span>
+        </div>
+    </div>
+
+</section>
+
+<script src="./js/script.js"></script>
 </body>
 </html>
