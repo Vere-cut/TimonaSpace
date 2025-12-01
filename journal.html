@@ -5,7 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Journal</title>
 </head>
+<link rel="stylesheet" href="./css/style.css">
 <body>
-    
+        <section class="journal-container">
+
+    <h2>Your Journal</h2>
+    <p class="journal-subtitle">Write your thoughts and reflect on your day.</p>
+
+    <!-- New Entry Box -->
+    <div class="new-entry-box">
+        <textarea placeholder="Write your journal entry here..."></textarea>
+        <button class="save-entry-btn">Save Entry</button>
+    </div>
+
+    <!-- Previous Entries -->
+    <h3 class="past-title">Previous Entries</h3>
+
+    <div class="entries-list">
+        <div class="entry-item">
+            <span class="entry-date">Nov 30, 2025</span>
+            <p class="entry-preview">Today I learned the power of consistency...</p>
+        </div>
+
+        <div class="entry-item">
+            <span class="entry-date">Nov 29, 2025</span>
+            <p class="entry-preview">I felt much better after journaling yesterday...</p>
+        </div>
+    </div>
+
+</section>
 </body>
 </html>

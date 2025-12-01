@@ -452,3 +452,85 @@
 
 }
 
+/* === JOURNAL PAGE === */
+.journal-container {
+    max-width: 750px;
+    margin: auto;
+    padding: 20px;
+}
+
+.journal-container h2 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.journal-subtitle {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* New Entry Box */
+.new-entry-box {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.06);
+    margin-bottom: 25px;
+}
+
+.new-entry-box textarea {
+    width: 100%;
+    height: 130px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    resize: none;
+    font-size: 15px;
+}
+
+.save-entry-btn {
+    margin-top: 10px;
+    padding: 12px 18px;
+    width: 100%;
+    background-color: #4a7efa;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Previous Entries */
+.past-title {
+    margin-bottom: 10px;
+}
+
+.entries-list .entry-item {
+    background: #f7f9fc;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    border-left: 4px solid #4a7efa;
+}
+
+.entry-date {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.entry-preview {
+    margin-top: 5px;
+    color: #444;
+}
+
+/* Responsive Journal Page */
+@media (max-width: 768px) {
+    .journal-container {
+        padding: 15px;
+    }
+
+    .new-entry-box textarea {
+        height: 110px;
+    }
+}
+
