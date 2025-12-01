@@ -328,3 +328,127 @@
     margin-bottom: 20px;
 }
 
+/* === Dashboard page === */
+.dashboard-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Welcome Banner */
+.welcome-section {
+    background: #f0f7ff;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Stats Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Quick Actions */
+.quick-actions {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.action-btn {
+    flex: 1;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background: #4b7bec;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.action-btn:hover {
+    background: #3867d6;
+}
+
+/* Graph Box */
+.graph-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.graph-placeholder {
+    background: #e8eef6;
+    height: 120px;
+    border-radius: 10px;
+}
+
+/* Recent Journals */
+.recent-journals .journal-item {
+    background: #fafafa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* -------------------- */
+/* RESPONSIVE Dashboard */
+/* -------------------- */
+
+@media (max-width: 768px) {
+
+    /* Reduce container padding */
+    .dashboard-container {
+        padding: 15px;
+    }
+
+    /* Welcome section text scaling */
+    .welcome-section h2 {
+        font-size: 20px;
+    }
+
+    .welcome-section p {
+        font-size: 14px;
+    }
+
+    /* Stats grid becomes 1 column */
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Quick action buttons stack vertically */
+    .quick-actions {
+        flex-direction: column;
+    }
+
+    .action-btn {
+        width: 100%;
+    }
+
+    /* Graph section adjustments */
+    .graph-placeholder {
+        height: 100px;
+    }
+
+    /* Recent journal spacing */
+    .recent-journals .journal-item {
+        padding: 12px;
+    }
+
+}
+
