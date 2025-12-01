@@ -277,7 +277,7 @@
 /* ===== END OF STYLE  for Home Page===== */  
 
 
-/* ==== login Page ===== */
+/* ==== login and register Page ===== */
 
 .auth-container {
     height: 100vh;
@@ -314,5 +314,17 @@
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
+}
+
+/* === Specific only for registration page === */
+
+.auth-box h2 {
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+
+.auth-box p {
+    color: #555;
+    margin-bottom: 20px;
 }
 
