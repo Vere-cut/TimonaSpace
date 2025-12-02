@@ -1,93 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome — TimonaSpace</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome — TimonaSpace</title>
+<style>
+  body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    padding: 20px;
+  }
 
-    <style>
-        body {
-            margin: 0;
-            font-family: "Poppins", sans-serif;
-            background: #f4f7fb;
-            color: #222;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
+  /* Profile Banner */
+  .profile-banner {
+    background: linear-gradient(135deg, #4b7bec, #3867d6);
+    color: white;
+    padding: 20px 30px;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  }
 
-        .container {
-            background: #ffffff;
-            padding: 40px;
-            max-width: 800px;
-            border-radius: 20px;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-            text-align: center;
-        }
+  .profile-banner h1 {
+    margin: 0;
+    font-size: 28px;
+  }
 
-        h1 {
-            font-size: 32px;
-            margin-bottom: 10px;
-            color: #4b7bec;
-        }
+  .profile-banner .details {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #e0eaff;
+  }
 
-        p {
-            font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
+  .profile-banner .details span {
+    font-weight: 600;
+  }
 
-        .buttons {
-            margin-top: 30px;
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
+  /* Welcome Container */
+  .container {
+    background: #ffffff;
+    padding: 40px;
+    max-width: 800px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    margin: 0 auto;
+  }
 
-        a.btn {
-            padding: 12px 25px;
-            background: #4b7bec;
-            color: white;
-            text-decoration: none;
-            border-radius: 10px;
-            font-weight: 500;
-            transition: 0.2s;
-        }
+  h2, p {
+    margin: 0 0 20px 0;
+  }
 
-        a.btn:hover {
-            background: #3867d6;
-        }
+  .buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
-        @media (max-width: 600px) {
-            h1 { font-size: 26px; }
-            .container { padding: 25px; }
-        }
-    </style>
+  a.btn {
+    padding: 12px 25px;
+    background: #4b7bec;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.2s;
+  }
+
+  a.btn:hover {
+    background: #3867d6;
+  }
+
+  @media (max-width: 600px) {
+    .profile-banner h1 { font-size: 22px; }
+    .profile-banner .details { font-size: 14px; }
+    .container { padding: 25px; }
+  }
+</style>
 </head>
-
 <body>
-    <div class="container">
-        <h1>Welcome to TimonaSpace</h1>
-        <p>
-            Hello Instructor,<br><br>
-            My name is <strong>Bek</strong>, and this project is part of the PHP Backend Development course.<br>
-            Before joining this class, I have built several projects using
-            <strong>HTML, CSS, JavaScript, React, Node.js, and MySQL</strong>.<br><br>
-            I want to use this course as an opportunity to deepen my understanding of
-            <strong>PHP</strong>, so I built this platform — TimonaSpace.<br><br>
-            Currently, the site contains static frontend pages with placeholder data.
-            The next step will be integrating PHP + MySQL to make it fully dynamic.
-        </p>
 
-        <p><strong>Please choose where you want to go:</strong></p>
-
-        <div class="buttons">
-            <a class="btn" href="main.html">Visit TimonaSpace Frontend</a>
-            <a class="btn" href="https://portfolio-v-0.vercel.app/">Visit My Portfolio</a>
-        </div>
+  <!-- Profile Banner -->
+  <div class="profile-banner">
+    <h1>Bereket Kiros</h1>
+    <div class="details">
+      <p><span>ID:</span> UGR/189518/16</p>
+      <p><span>Department:</span> 3rd yr SwE - Sec 2</p>
     </div>
+  </div>
+
+  <!-- Welcome Container -->
+  <div class="container">
+    <h2>Welcome to TimonaSpace</h2>
+    <p>
+      Hello Ins. Faniel,<br><br>
+      This is <strong><a href="https://github.com/Vere-cut">Bereket</a></strong>, and this project is part of the   Web development with PHP Backend course.<br>
+      Before joining this class, I have built some projects using
+      <strong>HTML, CSS, JavaScript, React, Node.js, and MySQL</strong>.<br><br>
+      I want to use this course as an opportunity to deepen my understanding of
+      <strong>PHP</strong>, so I built this platform — TimonaSpace.<br><br>
+      Currently, the site contains static frontend pages with placeholder data.
+      The next step will be integrating PHP + MySQL to make it fully dynamic.
+    </p>
+
+    <p><strong>Please choose where you want to go:</strong></p>
+
+    <div class="buttons">
+      <a class="btn" href="main.html">Visit TimonaSpace Frontend</a>
+      <a class="btn" href="https://portfolio-v-0.vercel.app/">Visit My Portfolio</a>
+    </div>
+  </div>
+
 </body>
 </html>
