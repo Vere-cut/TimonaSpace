@@ -3,88 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mindcare - Home</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Welcome — TimonaSpace</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: #f4f7fb;
+            color: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 40px;
+            max-width: 800px;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #4b7bec;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            margin-top: 30px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        a.btn {
+            padding: 12px 25px;
+            background: #4b7bec;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+
+        a.btn:hover {
+            background: #3867d6;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 26px; }
+            .container { padding: 25px; }
+        }
+    </style>
 </head>
+
 <body>
-    <header class="header">
-    <nav class="navbar">
-        <div class="logo">TimonaSpace</div>
+    <div class="container">
+        <h1>Welcome to TimonaSpace</h1>
+        <p>
+            Hello Instructor,<br><br>
+            My name is <strong>Bek</strong>, and this project is part of the PHP Backend Development course.<br>
+            Before joining this class, I have built several projects using
+            <strong>HTML, CSS, JavaScript, React, Node.js, and MySQL</strong>.<br><br>
+            I want to use this course as an opportunity to deepen my understanding of
+            <strong>PHP</strong>, so I built this platform — TimonaSpace.<br><br>
+            Currently, the site contains static frontend pages with placeholder data.
+            The next step will be integrating PHP + MySQL to make it fully dynamic.
+        </p>
 
-        <ul class="nav-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#how-it-works">How it Works</a></li>
-            <li><a href="login.html" class="login-btn">Login</a></li>
-            <li><a href="register.html" class="register-btn">Sign Up</a></li>
-        </ul>
+        <p><strong>Please choose where you want to go:</strong></p>
 
-         <div class="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-    </nav>
-</header>
-
-    <section class="hero">
-    <div class="hero-container">
-        <h1>Take Care of Your Mind - TimonaSpace(ጥሞና-Space)</h1>
-        <p>Journal your thoughts, track your moods, and grow emotionally every day.</p>
-        <a href="register.html" class="hero-btn">Get Started</a>
-    </div>
-</section>
-
-<section class="features" id="features">
-    <h2>Our Features</h2>
-    <div class="features-container">
-        <div class="feature-card">
-            <div class="feature-icon">📝</div>
-            <h3>Journaling</h3>
-            <p>Write your thoughts anytime and reflect on your emotions.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">📊</div>
-            <h3>Mood Tracking</h3>
-            <p>Track your daily moods visually and see trends over time.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">📚</div>
-            <h3>Resources</h3>
-            <p>Access articles, tips, and exercises for mental well-being.</p>
+        <div class="buttons">
+            <a class="btn" href="main.html">Visit TimonaSpace Frontend</a>
+            <a class="btn" href="https://portfolio-v-0.vercel.app/">Visit My Portfolio</a>
         </div>
     </div>
-</section>
-
-<section class="how-it-works" id="how-it-works">
-    <h2>How It Works</h2>
-    <div class="steps-container">
-        <div class="step-card">
-            <div class="step-icon">1️⃣</div>
-            <h3>Sign Up</h3>
-            <p>Create your account to start your personal mental health journey.</p>
-        </div>
-        <div class="step-card">
-            <div class="step-icon">2️⃣</div>
-            <h3>Journal Daily</h3>
-            <p>Write your thoughts, feelings, and reflections every day.</p>
-        </div>
-        <div class="step-card">
-            <div class="step-icon">3️⃣</div>
-            <h3>Track Progress</h3>
-            <p>Visualize your moods and growth over time with insights.</p>
-        </div>
-    </div>
-</section>
-
-<footer class="footer">
-    <di class="footer-container">
-        <div class="footer-logo">MindCare</div>
-        <p>Your safe space for mental health & journaling</p>
-        <p>© 2025 Timona Space. All rights reserved.</p>
-    </di
-</footer>
-
-<script src="./js/script.js"></script>
 </body>
 </html>
