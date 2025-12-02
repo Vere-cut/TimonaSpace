@@ -320,6 +320,10 @@
 .auth-btn:hover {
     background: #3867d6;
 }
+#register-button {
+    border: none;
+    cursor: pointer;
+}
 
 
 /* === Specific only for registration page === */
